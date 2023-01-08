@@ -1,4 +1,5 @@
 <div class="font-mono p-5 text-gray-800 transition-all">
+	<title>Mechatronics projects</title>
 	<header>
 		<div>
 			<a href="/"
@@ -12,39 +13,117 @@
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/projects">Projects</a>
+					<a href="/projects/">Projects</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/work">Work</a>
+					<a href="/work/">Work</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/publications">Publications</a>
+					<a href="/publications/">Publications</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/about">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/contact">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>
 	</header>
 	<body>
 		<div class="flex">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
-			  </svg>
-			  
-			<h2 class="font-extrabold text-3xl inline">Mechatronics projects</h2>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="w-6 h-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"
+				/>
+			</svg>
+
+			<h2 class="font-extrabold text-3xl inline pb-4">Mechatronics projects</h2>
 		</div>
-		<p>Under development</p>
+
+		<div>
+			<h3 class="font-extrabold text-2xl inline">Phantom Power</h3>
+			<p>
+				A flight computer for model rockets featuring: telemetry, active control, pyro-deployment,
+				and state logging
+			</p>
+			<div class="flex space-x-2">
+				<p class="font-bold ">Skills:</p>
+				<p class="italic ">PCB design, electronics</p>
+				<p class="font-bold ">Technologies:</p>
+				<p class="italic ">KiCad</p>
+			</div>
+			<figure>
+				<img
+					src="/images/phantomPower.jpg"
+					alt="Integrated Phantom Power flight computer"
+					class="object-cover h-90 w-96 p-2"
+				/>
+				<figcaption class="italic">Integrated Phantom Power flight computer</figcaption>
+			</figure>
+		</div>
+		<div class="pt-4">
+			<h3 class="font-extrabold text-2xl inline">Banshee</h3>
+			<p>
+				A low-power, pitot-static tube recording device for the Queen's Rocket Engineering Team's
+				2020 rocket. The board is placed inside the nosecone of the rocket and sleeps until the high
+				accelerations of launch are detected, after which it records airspeed data using a high
+				accuracy differential pressure sensor. This board is a unique component of the avionics
+				package as it needed to work independently of the main avionics system.
+			</p>
+			<div class="flex space-x-2">
+				<p class="font-bold ">Skills:</p>
+				<p class="italic ">PCB design, electronics</p>
+				<p class="font-bold ">Technologies:</p>
+				<p class="italic ">KiCad</p>
+			</div>
+			<figure>
+				<img
+					src="/images/banshee.jpg"
+					alt="Banshee airspeed computer"
+					class="object-cover h-90 w-96 p-2"
+				/>
+				<figcaption class="italic">Banshee airspeed computer</figcaption>
+			</figure>
+		</div>
+		<div class="pt-4">
+			<h3 class="font-extrabold text-2xl inline">Athena Series</h3>
+			<p>
+				An earlier generation series of model rocket flight computer with reduced features compared
+				to Phantom Power. The final iteration featured an ESP32 for short range telemetry. This was
+				the project where I got started with PCB design.
+			</p>
+			<div class="flex space-x-2">
+				<p class="font-bold ">Skills:</p>
+				<p class="italic ">PCB design, electronics</p>
+				<p class="font-bold ">Technologies:</p>
+				<p class="italic ">Easy EDA</p>
+			</div>
+			<figure>
+				<img
+					src="/images/athena.jpg"
+					alt="Athena flight computer"
+					class="object-cover h-90 w-96 p-2"
+				/>
+				<figcaption class="italic">Athena flight computer (gen 5)</figcaption>
+			</figure>
+		</div>
 	</body>
 </div>

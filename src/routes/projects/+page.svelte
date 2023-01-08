@@ -12,22 +12,22 @@
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/work">Work</a>
+					<a href="/work/">Work</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/publications">Publications</a>
+					<a href="/publications/">Publications</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/about">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/contact">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -43,7 +43,7 @@
 			My projects usually fall into the following catagories, which would you like to see more of?
 		</p>
 		<div class="flex space-x-5 justify-center">
-			<a href="/projects/software_development" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
+			<a href="/projects/software_development/" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
 				<div class="flex">
 					<p class="font-bold">Software</p>
 					<svg
@@ -62,7 +62,7 @@
 					</svg>
 				</div>
 			</a>
-			<a href="/projects/robotics" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
+			<a href="/projects/robotics/" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
 				<div class="flex">
 					<p class="font-bold">Robotics</p>
 					<svg
@@ -82,7 +82,7 @@
 				</div>
 			</a>
 
-			<a href="/projects/mechatronics" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
+			<a href="/projects/mechatronics/" class="border-spacing-10 border-4 border-gray-800 rounded hover:scale-110">
 				<div class="flex">
 					<p class="font-bold">Mechatronics</p>
 					<svg

@@ -12,27 +12,27 @@
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/projects">Projects</a>
+					<a href="/projects/">Projects</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/work">Work</a>
+					<a href="/work/">Work</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/publications">Publications</a>
+					<a href="/publications/">Publications</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/about">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/contact">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>

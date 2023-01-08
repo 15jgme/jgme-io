@@ -1,4 +1,5 @@
 <div class="font-mono p-5 text-gray-800 transition-all">
+	<title>Publications</title>
 	<header>
 		<div>
 			<a href="/"
@@ -12,22 +13,22 @@
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/projects">Projects</a>
+					<a href="/projects/">Projects</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/work">Work</a>
+					<a href="/work/">Work</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/about">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li
 					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
 				>
-					<a href="/contact">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -43,7 +44,7 @@
 
 		<figure>
 			<img
-				src="/src/routes/publications/mcfoamy.png"
+				src="/images/mcfoamy.png"
 				alt="Agile Fixed-Wing aircraft"
 				class="object-cover h-90 w-96"
 			/>
@@ -76,7 +77,7 @@
 				performance when compared to the feedback position controller operating on its own.
 			</p>
 			<a
-				href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9836186&isnumber=9835714"
+				href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9836186&isnumber=9835714/"
 				class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:scale-110 hover:from-purple-300 hover:to-pink-500 transition-all"
 			>
 				Full text available on IEEEXplore
@@ -108,7 +109,7 @@
 				ailerons or unknown effects of advancing flow conditions.
 			</p>
 			<a
-				href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9836217&isnumber=9835714"
+				href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9836217&isnumber=9835714/"
 				class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500 hover:scale-110 transition-all"
 			>
 				Full text available on IEEEXplore
@@ -143,7 +144,7 @@
 				feedforward controller and model-based slipstream removal.
 			</p>
 			<a
-				href="https://escholarship.mcgill.ca/concern/theses/kd17d0511"
+				href="https://escholarship.mcgill.ca/concern/theses/kd17d0511/"
 				class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500 hover:scale-110 transition-all"
 			>
 				Full text available on McGill eScholarship
