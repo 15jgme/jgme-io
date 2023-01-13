@@ -1,42 +1,14 @@
+<script>
+	import phantomPowerImg from "$lib/assets/images/phantomPower.jpg?w=300&h=400&webp";
+	import bansheeImg from "$lib/assets/images/banshee.jpg?w=300&h=400&webp";
+	import athenaImg from "$lib/assets/images/athena.jpg?w=300&h=400&webp";
+	import NavigationBar from "$lib/components/navigationBar.svelte";
+</script>
+
 <div class="font-mono p-5 text-gray-800 transition-all">
 	<title>Mechatronics projects</title>
 	<header>
-		<div>
-			<a href="/"
-				><h1
-					class="justify-start font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 inline"
-				>
-					jgme.io
-				</h1></a
-			>
-			<ul class="inline-flex justify-end font-mono p-5 text-gray-800 transition-all">
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/projects/">Projects</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/work/">Work</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/publications/">Publications</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/about/">About</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/contact/">Contact</a>
-				</li>
-			</ul>
-		</div>
+		<NavigationBar omittedLink={''}/>
 	</header>
 	<body>
 		<div class="flex">
@@ -72,7 +44,11 @@
 			</div>
 			<figure>
 				<img
-					src="/images/phantomPower.jpg"
+					loading="lazy"
+					decoding="async"
+					src={phantomPowerImg}
+					width="50"
+					height="100"
 					alt="Integrated Phantom Power flight computer"
 					class="object-cover h-90 w-96 p-2"
 				/>
@@ -96,7 +72,9 @@
 			</div>
 			<figure>
 				<img
-					src="/images/banshee.jpg"
+					loading="lazy"
+					decoding="async"
+					src={bansheeImg}
 					alt="Banshee airspeed computer"
 					class="object-cover h-90 w-96 p-2"
 				/>
@@ -118,7 +96,9 @@
 			</div>
 			<figure>
 				<img
-					src="/images/athena.jpg"
+					loading="lazy"
+					decoding="async"
+					src={athenaImg}
 					alt="Athena flight computer"
 					class="object-cover h-90 w-96 p-2"
 				/>

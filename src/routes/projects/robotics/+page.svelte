@@ -1,42 +1,17 @@
+<script>
+	import eperpeparaImg from "$lib/assets/images/robotics/eperpepara.drawio.png?w=300&h=400&webp";
+	import fiveMsCircleImg from "$lib/assets/images/robotics/circle5mswind.png?w=300&h=400&webp";
+	import ataSlipMeasureImg from "$lib/assets/images/robotics/ata_slip_measure.png?w=300&h=400&webp";
+	import ataSlipMomImg from "$lib/assets/images/robotics/atamom.png?w=300&h=400&webp";
+	import icuasGif from "$lib/assets/images/robotics/icuasuav.gif";
+	import icuasTeamImg from "$lib/assets/images/robotics/icuasTeam.jpg?w=300&h=400&webp";
+	import NavigationBar from "$lib/components/navigationBar.svelte";
+</script>
+
 <div class="font-mono p-5 text-gray-800 transition-all">
 	<title>Robotics Projects</title>
 	<header>
-		<div>
-			<a href="/"
-				><h1
-					class="justify-start font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 inline"
-				>
-					jgme.io
-				</h1></a
-			>
-			<ul class="inline-flex justify-end font-mono p-5 text-gray-800 transition-all">
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/projects/">Projects</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/work/">Work</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/publications/">Publications</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/about/">About</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/contact/">Contact</a>
-				</li>
-			</ul>
-		</div>
+		<NavigationBar omittedLink={''}/>
 	</header>
 	<body>
 		<div class="flex">
@@ -83,12 +58,12 @@
 					<figure class="">
 						<div class="flex">
 							<img
-								src="/images/robotics/eperpepara.drawio.png"
+								src={eperpeparaImg}
 								alt="Error definitions for feedforward wind rejection controller"
 								class="object-cover h-90 w-96 p-2"
 							/>
 							<img
-								src="/images/robotics/circle5mswind.png"
+								src={fiveMsCircleImg}
 								alt="Simulated controller performance"
 								class="object-cover h-90 w-[550px] p-2"
 							/>
@@ -112,19 +87,19 @@
 					<figure class="">
 						<div class="flex">
 							<img
-								src="/images/robotics/ata_slip_measure.png"
+								src={ataSlipMeasureImg}
 								alt="Simulated controller performance"
 								class="object-cover h-90 w-96 p-2"
 							/>
 							<img
-								src="/images/robotics/atamom.png"
+								src={ataSlipMomImg}
 								alt="Aerobatic maneuver without slipstream measurement"
 								class="object-cover h-90 w-96 p-2"
 							/>
 						</div>
 
 						<figcaption class="italic">
-							Aerobatic maneuver without slipstream measurement (left), and with slipstream
+							Aerobatic maneuver with slipstream measurement (left), and without slipstream
 							measurement (right)
 						</figcaption>
 					</figure>
@@ -164,7 +139,7 @@
 			</div>
 			<figure>
 				<img
-					src="/images/robotics/icuasuav.gif"
+					src={icuasGif}
 					alt="Autonomous ball launch attempt"
 					class="object-cover h-90 w-96 p-2"
 				/>
@@ -172,7 +147,7 @@
 			</figure>
 			<figure>
 				<img
-					src="/images/robotics/icuasTeam.jpg"
+					src={icuasTeamImg}
 					alt="AML ICUS UAV team in Dubrovnik"
 					class="object-cover h-90 w-96 p-2"
 				/>

@@ -1,37 +1,12 @@
+<script>
+	import mcfoamyImg from "$lib/assets/images/mcfoamy.png?w=300&h=400&webp";
+	import NavigationBar from "$lib/components/navigationBar.svelte";
+</script>
+
 <div class="font-mono p-5 text-gray-800 transition-all">
 	<title>Publications</title>
 	<header>
-		<div>
-			<a href="/"
-				><h1
-					class="justify-start font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 inline"
-				>
-					jgme.io
-				</h1></a
-			>
-			<ul class="inline-flex justify-end font-mono p-5 text-gray-800 transition-all">
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/projects/">Projects</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/work/">Work</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/about/">About</a>
-				</li>
-				<li
-					class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-				>
-					<a href="/contact/">Contact</a>
-				</li>
-			</ul>
-		</div>
+		<NavigationBar omittedLink={'publications'}/>
 	</header>
 	<body
 		><h2 class="font-extrabold text-3xl ">Publications</h2>
@@ -44,7 +19,7 @@
 
 		<figure>
 			<img
-				src="/images/mcfoamy.png"
+				src={mcfoamyImg}
 				alt="Agile Fixed-Wing aircraft"
 				class="object-cover h-90 w-96"
 			/>

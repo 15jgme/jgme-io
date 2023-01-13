@@ -1,5 +1,9 @@
 import adapter from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+// import pack from 'vite-imagetools';
+// const { imagetools } = pack;
+import {imagetools} from 'vite-imagetools';
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,6 +13,14 @@ const config = {
 
 	kit: {
 		adapter: adapter({out: 'node_build'})
+	},
+	vite: {
+		resolve: {
+			alias: {
+				$static: path.resolve('src/static')
+			}
+		},
+		plugins: [imagetools()]
 	}
 };
 

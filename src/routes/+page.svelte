@@ -1,71 +1,56 @@
+<script>import NavigationBar from "$lib/components/navigationBar.svelte";</script>
+
 <div class="flex flex-col h-screen justify-between">
 	<title>Jackson Empey's website</title>
-	<ul class="flex justify-end font-mono p-5 text-gray-800 transition-all">
-		<li
-			class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-		>
-			<a href="/projects">Projects</a>
-		</li>
-		<li
-			class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-		>
-			<a href="/work/">Work</a>
-		</li>
-		<li
-			class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-		>
-			<a href="/publications/">Publications</a>
-		</li>
-		<li
-			class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-		>
-			<a href="/about/">About</a>
-		</li>
-		<li
-			class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
-		>
-			<a href="/contact/">Contact</a>
-		</li>
-	</ul>
+	<header class="text-right">
+		<NavigationBar omittedLink={'home'}/>
+	</header>
+
 	<body class="transition-all">
 		<div class="flex flex-col py-20 justify-center items-center font-mono text-gray-800 text-5xl">
 			<h1 class="font-bold ">Hi, I'm</h1>
 
 			<h1
-				class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+				class="font-extrabold text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
 			>
 				Jackson Empey
 			</h1>
 
-			<div class="text-2xl flex-col">
-				<p>An engineering graduate with experience in</p>
-				<a
-					href="/projects/robotics/"
-					class="inline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
-				>
-					robotics
-				</a>
-				<p class="inline">,</p>
-				<a
-					href="/projects/software_development/"
-					class="inline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
-				>
-					software development
-				</a>
-				<p class="inline">, and</p>
-				<a
-					href="/projects/mechatronics/"
-					class="inline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
-				>
-					mechatronics
-				</a>
+			<div class="text-2xl w-2/3">
+				<p class="text-center">
+					An engineering graduate with experience in
+					<span class="inline-block">
+						<a
+							href="/projects/robotics/"
+							class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						>
+							robotics
+						</a></span
+					>,
+					<span class="inline-block"
+						><a
+							href="/projects/software_development/"
+							class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						>
+							software development
+						</a></span
+					>, and
+					<span class="inline-block"
+						><a
+							href="/projects/mechatronics/"
+							class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						>
+							mechatronics
+						</a></span
+					>
+				</p>
 			</div>
 		</div>
 	</body>
-	<footer class="transition-all py-5">
+	<footer class="transition-all py-5 flex space-x-9/16">
 		<a
 			href="mailto:jackson.empey@mail.mcgill.ca"
-			class="font-mono p-7 text-gray-500 hover:text-gray-800 justify-start fixed bottom-0 hover:scale-110 transition-all"
+			class="font-mono p-7 text-gray-500 hover:text-gray-800 justify-start hover:scale-110 transition-all"
 			>jackson.empey@mail.mcgill.ca</a
 		>
 
