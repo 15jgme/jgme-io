@@ -17,7 +17,7 @@
 </script>
 
 {#if open}
-	<div>
+	<div class="flex flex-col">
 		{#each linksList as link, i}
 			{#if omittedLink !== link.toLowerCase()}
 				<a transition:fly={{ y: -15, delay: 50 * i }} href={urlList[i]}>

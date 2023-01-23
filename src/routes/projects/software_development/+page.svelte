@@ -155,9 +155,9 @@
 			<p>Written with Sveltkit and made pretty pretty with TailwindCSS</p>
 			<div class="flex space-x-2">
 				<p class="font-bold ">Skills:</p>
-				<p class="italic ">Moble and web app development, Networking</p>
+				<p class="italic ">Web development</p>
 				<p class="font-bold ">Technologies:</p>
-				<p class="italic ">Dart, Flutter, Go, PocketBase</p>
+				<p class="italic ">JavaScript, Svelte, Docker</p>
 			</div>
 			<a
 				href="https://github.com/15jgme/jgme-io"
