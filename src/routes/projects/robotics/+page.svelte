@@ -8,11 +8,8 @@
 	import NavigationBar from "$lib/components/navigationBar.svelte";
 </script>
 
-<div class="font-mono p-5 text-gray-800 transition-all">
+<div class="font-mono p-5 transition-all">
 	<title>Robotics Projects</title>
-	<header>
-		<NavigationBar omittedLink={''}/>
-	</header>
 	<body>
 		<div class="flex">
 			<svg

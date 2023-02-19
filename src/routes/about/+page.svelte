@@ -2,11 +2,8 @@
 	import NavigationBar from '$lib/components/navigationBar.svelte';
 </script>
 
-<div class="font-mono p-5 text-gray-800 transition-all">
+<div class="font-mono p-5 transition-all">
 	<title>About me</title>
-	<header>
-		<NavigationBar omittedLink={'about'} />
-	</header>
 	<body
 		><div class="flex-col flex">
 			<h2 class="font-extrabold text-3xl ">More about me</h2>

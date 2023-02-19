@@ -1,9 +1,6 @@
 <script>import NavigationBar from "$lib/components/navigationBar.svelte";</script>
 
-<div class="font-mono p-5 text-gray-800 transition-all">
-	<header>
-		<NavigationBar omittedLink={'projects'}/>
-	</header>
+<div class="font-mono p-5 transition-all">
 	<body
 		><h2 class="font-extrabold text-3xl">Projects</h2>
 		<p>

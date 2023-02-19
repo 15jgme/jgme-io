@@ -22,11 +22,11 @@
 				</h1></a
 			>
 		{/if}
-		<ul class="inline-flex justify-end font-mono p-5 text-gray-800 transition-all">
+		<ul class="inline-flex justify-end font-mono p-5 transition-all">
 			{#each linksList as link, i}
 				{#if omittedLink !== link.toLowerCase()}
 					<li
-						class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600 hover:text-gray-100"
+						class="mr-6 p-2 rounded-2xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600"
 					>
 						<a href={urlList[i]}>{link}</a>
 					</li>

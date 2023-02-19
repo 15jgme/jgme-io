@@ -3,11 +3,8 @@
 	import NavigationBar from "$lib/components/navigationBar.svelte";
 </script>
 
-<div class="font-mono p-5 text-gray-800 transition-all">
+<div class="font-mono p-5 transition-all">
 	<title>Publications</title>
-	<header>
-		<NavigationBar omittedLink={'publications'}/>
-	</header>
 	<body
 		><h2 class="font-extrabold text-3xl ">Publications</h2>
 		<p>

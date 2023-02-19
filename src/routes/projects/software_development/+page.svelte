@@ -2,10 +2,7 @@
 	import NavigationBar from '$lib/components/navigationBar.svelte';
 </script>
 
-<div class="font-mono p-5 text-gray-800 transition-all">
-	<header>
-		<NavigationBar omittedLink={''}/>
-	</header>
+<div class="font-mono p-5 transition-all">
 	<body>
 		<div class="flex">
 			<svg
@@ -151,7 +148,7 @@
 		</div>
 		<div class="pt-4">
 			<h3 class="font-extrabold text-2xl inline">This website!</h3>
-			<h6 class="font-extrabold text-1xl inline italic text-gray-300">(very meta)</h6>
+			<h6 class="font-extrabold text-1xl inline italic ">(very meta)</h6>
 			<p>Written with Sveltkit and made pretty pretty with TailwindCSS</p>
 			<div class="flex space-x-2">
 				<p class="font-bold ">Skills:</p>
