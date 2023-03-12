@@ -1,7 +1,5 @@
 import adapter from '@sveltejs/adapter-node';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-// import pack from 'vite-imagetools';
-// const { imagetools } = pack;
 import {imagetools} from 'vite-imagetools';
 import path from 'path';
 
@@ -20,7 +18,7 @@ const config = {
 				$static: path.resolve('src/static')
 			}
 		},
-		plugins: [imagetools()]
+		plugins: [imagetools({force: true})]
 	}
 };
 

@@ -1,10 +1,8 @@
 <script>
-	import NavigationBar from '$lib/components/navigationBar.svelte';
 </script>
 
 <title>Jackson Empey's website</title>
 <header class="text-right">
-	<!-- <NavigationBar omittedLink={'home'}/> -->
 </header>
 
 <body class="transition-all flex flex-col h-screen">
@@ -23,23 +21,23 @@
 				<span class="inline-block">
 					<a
 						href="/projects/robotics/"
-						class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						class="font-extrabold link link-hover"
 					>
-						robotics
+						robotics,
 					</a></span
-				>,
+				>
 				<span class="inline-block"
 					><a
 						href="/projects/software_development/"
-						class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						class="font-extrabold link link-hover"
 					>
-						software development
+						software development,
 					</a></span
-				>, and
-				<span class="inline-block"
+				> and
+				<span class="inline-block link link-hover"
 					><a
 						href="/projects/mechatronics/"
-						class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-purple-300 hover:to-pink-500"
+						class="font-extrabold"
 					>
 						mechatronics
 					</a></span

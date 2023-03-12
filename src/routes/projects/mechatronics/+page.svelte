@@ -1,8 +1,46 @@
-<script>
+<script lang="ts">
 	import phantomPowerImg from "$lib/assets/images/phantomPower.jpg?w=300&h=400&webp";
 	import bansheeImg from "$lib/assets/images/banshee.jpg?w=300&h=400&webp";
 	import athenaImg from "$lib/assets/images/athena.jpg?w=300&h=400&webp";
-	import NavigationBar from "$lib/components/navigationBar.svelte";
+
+	import Card from "$lib/components/Card.svelte";
+	import type { cardInterface } from "$lib/components/cardInterface";
+
+	let phantomPower: cardInterface = {
+		title: "Phantom Power",
+		description: "A flight computer for model rockets featuring: telemetry, active control, pyro-deployment, and state logging",
+		skills: ["PCB design", "electronics"],
+		technologies: ["KiCad"],
+		imagesData: [{
+			location: phantomPowerImg,
+			alt: "Integrated Phantom Power flight computer",
+			caption: "Integrated Phantom Power flight computer",
+		}],
+	}
+
+	let banshee: cardInterface = {
+		title: "Banshee",
+		description: "A low-power, pitot-static tube recording device for the Queen's Rocket Engineering Team's 2020 rocket. The board is placed inside the nosecone of the rocket and sleeps until the high accelerations of launch are detected, after which it records airspeed data using a high accuracy differential pressure sensor. This board is a unique component of the avionics package as it needed to work independently of the main avionics system.",
+		skills: ["PCB design", "electronics"],
+		technologies: ["KiCad"],
+		imagesData: [{
+			location: bansheeImg,
+			alt: "Banshee airspeed computer",
+			caption: "Banshee airspeed computer",
+		}],
+	}
+
+	let athena: cardInterface = {
+		title: "Athena series",
+		description: "An earlier generation series of model rocket flight computer with reduced features compared to Phantom Power. The final iteration featured an ESP32 for short range telemetry. This was the project where I got started with PCB design.",
+		skills: ["PCB design", "electronics"],
+		technologies: ["EasyEDA"],
+		imagesData: [{
+			location: athenaImg,
+			alt: "Athena flight computer",
+			caption: "Athena flight computer (gen 5)",
+		}],
+	}
 </script>
 
 <div class="font-mono p-5 transition-all">
@@ -27,80 +65,16 @@
 			<h2 class="font-extrabold text-3xl inline pb-4">Mechatronics projects</h2>
 		</div>
 
-		<div>
-			<h3 class="font-extrabold text-2xl inline">Phantom Power</h3>
-			<p>
-				A flight computer for model rockets featuring: telemetry, active control, pyro-deployment,
-				and state logging
-			</p>
-			<div class="flex space-x-2">
-				<p class="font-bold ">Skills:</p>
-				<p class="italic ">PCB design, electronics</p>
-				<p class="font-bold ">Technologies:</p>
-				<p class="italic ">KiCad</p>
-			</div>
-			<figure>
-				<img
-					loading="lazy"
-					decoding="async"
-					src={phantomPowerImg}
-					width="50"
-					height="100"
-					alt="Integrated Phantom Power flight computer"
-					class="object-cover h-90 w-96 p-2"
-				/>
-				<figcaption class="italic">Integrated Phantom Power flight computer</figcaption>
-			</figure>
+		<div class="flex justify-center py-3">
+			<Card data={phantomPower}/>
 		</div>
-		<div class="pt-4">
-			<h3 class="font-extrabold text-2xl inline">Banshee</h3>
-			<p>
-				A low-power, pitot-static tube recording device for the Queen's Rocket Engineering Team's
-				2020 rocket. The board is placed inside the nosecone of the rocket and sleeps until the high
-				accelerations of launch are detected, after which it records airspeed data using a high
-				accuracy differential pressure sensor. This board is a unique component of the avionics
-				package as it needed to work independently of the main avionics system.
-			</p>
-			<div class="flex space-x-2">
-				<p class="font-bold ">Skills:</p>
-				<p class="italic ">PCB design, electronics</p>
-				<p class="font-bold ">Technologies:</p>
-				<p class="italic ">KiCad</p>
-			</div>
-			<figure>
-				<img
-					loading="lazy"
-					decoding="async"
-					src={bansheeImg}
-					alt="Banshee airspeed computer"
-					class="object-cover h-90 w-96 p-2"
-				/>
-				<figcaption class="italic">Banshee airspeed computer</figcaption>
-			</figure>
+		<div class="flex justify-center py-3">
+			<Card data={banshee}/>
 		</div>
-		<div class="pt-4">
-			<h3 class="font-extrabold text-2xl inline">Athena Series</h3>
-			<p>
-				An earlier generation series of model rocket flight computer with reduced features compared
-				to Phantom Power. The final iteration featured an ESP32 for short range telemetry. This was
-				the project where I got started with PCB design.
-			</p>
-			<div class="flex space-x-2">
-				<p class="font-bold ">Skills:</p>
-				<p class="italic ">PCB design, electronics</p>
-				<p class="font-bold ">Technologies:</p>
-				<p class="italic ">Easy EDA</p>
-			</div>
-			<figure>
-				<img
-					loading="lazy"
-					decoding="async"
-					src={athenaImg}
-					alt="Athena flight computer"
-					class="object-cover h-90 w-96 p-2"
-				/>
-				<figcaption class="italic">Athena flight computer (gen 5)</figcaption>
-			</figure>
+		<div class="flex justify-center py-3">
+			<Card data={athena}/>
 		</div>
+
+	
 	</body>
 </div>

@@ -1,4 +1,4 @@
-<script>import NavigationBar from "$lib/components/navigationBar.svelte";</script>
+<script></script>
 
 <div class="font-mono p-5 transition-all">
 	<body
