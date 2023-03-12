@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { cardInterface } from '$lib/components/cardInterface';
-	import Card from '$lib/components/card.svelte';
+	import Card from '$lib/components/Card.svelte';
 	import icuasGif from '$lib/assets/images/robotics/icuasuav.gif';
 	import icuasTeamImg from '$lib/assets/images/robotics/icuasTeam.jpg?w=300&h=400&webp';
 

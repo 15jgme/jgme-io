@@ -8,7 +8,7 @@
 	
 
 	import type { cardInterface } from '$lib/components/cardInterface';
-	import Card from '$lib/components/card.svelte';
+	import Card from '$lib/components/Card.svelte';
 
 	let research: cardInterface = {
 		title: 'Wind sensing and rejection for agile fixed-wing aircraft',
