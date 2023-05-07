@@ -36,10 +36,10 @@
 	};
 </script>
 
-<div class="font-mono p-5 transition-all">
+<div class="text-sm md:text-base font-mono p-5 transition-all">
 	<title>Publications</title>
 	<body
-		><h2 class="font-extrabold text-3xl ">Publications</h2>
+		><h2 class="font-extrabold text-2xl md:text-3xl ">Publications</h2>
 		<p>
 			My research at McGill's Aerospace Mechatronics Laboratory focused on aerial robotics. In
 			particular, agile fixed wing aircraft and how to control them in windy conditions. My research

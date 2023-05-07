@@ -2,6 +2,13 @@ interface imageData {
     location: string,
     alt?: string,
     caption?: string,
+    fit? :boolean,
+}
+
+interface videosData {
+    location: string,
+    alt?: string,
+    caption?: string,
 }
 
 export interface cardInterface {
@@ -11,6 +18,7 @@ export interface cardInterface {
     technologies: string[],
     url?: string,
     imagesData?: imageData[],
+    videosData?: videosData[],
 }
 
 export interface pubInterface {
@@ -20,4 +28,23 @@ export interface pubInterface {
     abstract: string,
     url: string,
     host: string,
+}
+
+export interface experienceInterface {
+    company: string,
+    role: string,
+    dates: string,
+    description: string,
+    skills?: string[],
+}
+
+export interface skill{
+    name: string,
+    redirect?: string,
+}
+
+export interface skillInterface {
+    catagory: string,
+    experiencedSkills: skill[],
+    intermediateSkills?: skill[],
 }

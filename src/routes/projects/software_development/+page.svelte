@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { cardInterface } from '$lib/components/cardInterface';
 	import Card from '$lib/components/Card.svelte';
+	import moonflower_image from '$lib/assets/images/moonflower.png';
 
 	let ardutask: cardInterface = {
 		title: 'Ardutask',
@@ -29,6 +30,39 @@
 		url: 'https://github.com/15jgme/RX1'
 	};
 
+	let tusk: cardInterface = {
+		title: 'Tusk',
+		description:
+			'A lightweight cli tool for updating docker container instances. Written in Go using BubbleTea.',
+		skills: ['Go'],
+		technologies: ['Docker', 'Bubbletea'],
+		url: 'https://github.com/15jgme/tusk',
+		imagesData: [
+			{
+				location: 'https://raw.githubusercontent.com/15jgme/tusk/main/resources/tuskDemo.gif',
+				alt: 'Example of tusk tool being used to update a docker container',
+				caption: '',
+				fit: true
+			}
+		]
+	};
+
+	let moonflower: cardInterface = {
+		title: 'Moonflower',
+		description: 'A webapp to explore Arxiv and encourage daily reading',
+		skills: ['Web design', 'Javascript/Typescript', 'HTML'],
+		technologies: ['Sveltekit', 'TailwindCSS', 'Pocketbase'],
+		url: 'https://github.com/15jgme/moonflower',
+		imagesData: [
+			{
+				location: moonflower_image,
+				alt: 'A view of the browse menu in the moonflower app',
+				caption: '',
+				fit: true
+			}
+		]
+	};
+
 	let jgmeio: cardInterface = {
 		title: 'This website!',
 		description: 'Written with Sveltkit and made pretty pretty with TailwindCSS and DaisyUI.',
@@ -38,7 +72,7 @@
 	};
 </script>
 
-<div class="font-mono transition-all flex">
+<div class="text-sm md:text-base font-mono transition-all flex ">
 	<body>
 		<div class="px-5">
 			<svg
@@ -55,7 +89,7 @@
 					d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
 				/>
 			</svg>
-			<h2 class="font-extrabold text-3xl inline">Software projects</h2>
+			<h2 class="font-extrabold text-2xl md:text-3xl inline">Software projects</h2>
 		</div>
 		<div class="justify-center flex py-3">
 			<Card data={ardutask}>
@@ -72,6 +106,33 @@
 					separate my different processes for embedded projects. This project is one part in a
 					larger objective to create a small, ROS compatible, multi-platform estimation toolbox for
 					embedded systems.
+				</p>
+			</Card>
+		</div>
+
+		<div class="justify-center flex py-3">
+			<Card data={moonflower}>
+				<a href="https://moonflower.jgme.io" class="btn min-w-fit">Check out moonflower</a>
+				<p>
+					I wrote moonflower to encourage me to keep an eye on the new and exciting research
+					regularly published to Arxiv. The original idea was to pick a recently published paper
+					everyday for users from their favorite Arxiv catagories, after reading users can rate how
+					interesting they found the research and the most interesting articles for a given week are
+					collected on a list available to all users. The project is still in development and I
+					intend to add on additional searching and browse features to help users search Arxiv
+					across different catagories. This project was my first real webapp and leverages
+					Pocketbase for the backend.
+				</p>
+			</Card>
+		</div>
+
+		<div class="justify-center flex py-3">
+			<Card data={tusk}>
+				<p>
+					I wrote tusk to help manage deployments of my moonflower project and personal website on a
+					VPS. I use github actions to build docker images for these projects and then once built,
+					tusk to deploy. This project was one of my first entries to Go and BubbleTea, and I had a
+					great experience working with both!
 				</p>
 			</Card>
 		</div>
@@ -103,28 +164,25 @@
 					you can access and write new data anywhere in the rocket firmware and instantly see it
 					show up in Grafana.
 				</p>
-				<blockquote class="twitter-tweet">
-					<p lang="en" dir="ltr">
-						Couple new RX1 additions. It now has a state machine handling different flight modes,
-						and a task handler which tries its hardest to run jobs at certain frequencies. (also
-						some other frills) <a href="https://t.co/9903L9jEmo">pic.twitter.com/9903L9jEmo</a>
-					</p>
-					&mdash; Jackson&#39;s projects (@robots_n_rocket)<a
-						href="https://twitter.com/robots_n_rocket/status/1482753914407641090?ref_src=twsrc%5Etfw"
-						>January 16, 2022</a
-					>
-				</blockquote>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="items-center flex flex-col">
+					<blockquote class="twitter-tweet">
+						<p lang="en" dir="ltr">
+							Couple new RX1 additions. It now has a state machine handling different flight modes,
+							and a task handler which tries its hardest to run jobs at certain frequencies. (also
+							some other frills) <a href="https://t.co/9903L9jEmo">pic.twitter.com/9903L9jEmo</a>
+						</p>
+						&mdash; Jackson&#39;s projects (@robots_n_rocket)<a
+							href="https://twitter.com/robots_n_rocket/status/1482753914407641090?ref_src=twsrc%5Etfw"
+							>January 16, 2022</a
+						>
+					</blockquote>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
 			</Card>
 		</div>
 
 		<div class="justify-center flex py-3">
-			<Card data={jgmeio}>
-				<p>
-					My first real adventure in anything web related (aside from flutter-web), certainly wont
-					be my last!
-				</p>
-			</Card>
+			<Card data={jgmeio} />
 		</div>
 	</body>
 </div>

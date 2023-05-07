@@ -1,11 +1,11 @@
 <script>
 </script>
 
-<div class="font-mono p-5 transition-all">
+<div class="text-sm md:text-base font-mono p-5 transition-all">
 	<title>About me</title>
 	<body
 		><div class="flex-col flex">
-			<h2 class="font-extrabold text-3xl ">More about me</h2>
+			<h2 class="font-extrabold text-2xl md:text-3xl ">More about me</h2>
 			<p class="pt-5">
 				After recently finishing my Master's, I'm currently living in Montreal and working as a
 				software developer contracted to CAE, my main work is on the dynamics models of the

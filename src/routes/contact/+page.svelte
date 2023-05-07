@@ -1,10 +1,10 @@
 <script></script>
 
-<div class="font-mono p-5 transition-all">
+<div class="text-sm md:text-base font-mono p-5 transition-all">
 	<body
 		><div class="flex-col flex">
-			<h2 class="font-extrabold text-3xl ">Contact</h2>
-			<p class="pt-5">I'm always happy to chat, and love talking to and learning from new people</p>
+			<h2 class="font-extrabold text-2xl md:text-3xl ">Contact</h2>
+			<p class="pt-5">I'm always happy to chat, and love talking to and learning from new people.</p>
 			<p>You can reach me at any of the following spaces below, whichever works best for you</p>
 			<a
 				href="mailto:jackson.empey@mail.mcgill.ca"

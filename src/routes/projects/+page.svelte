@@ -2,24 +2,20 @@
 	import type { cardInterface } from '$lib/components/cardInterface';
 	import Card from '$lib/components/Card.svelte';
 	import icuasGif from '$lib/assets/images/robotics/icuasuav.gif';
-	import icuasTeamImg from '$lib/assets/images/robotics/icuasTeam.jpg?w=300&h=400&webp';
+	import icuasSim from '$lib/assets/images/robotics/ICUASSimulation.mp4';
 
 	let icuas: cardInterface = {
 		title: 'UAV competition, ICUAS 2022 (2nd place out of 50 teams)',
 		description:
-			"The objective of the International Conference on Unmanned Aerial Systems (ICUAS) UAV competition, was to autonomously navigate through an obstacle field, search for an AR tag in an unknown location, and compute and execute a launch trajectory to land a payload on the AR tag. I participated as part of McGill Aerospace Mechatronics Lab (AML) team. The first phase of the competition was simulation based, where we worked with ROS and Gazebo to submit a solution to challenge which was tested by the organizers on a random obstacle course. Once we made it to the second phase of the competition, we (alongside the other top-5 teams) shifted our focus to performing the challenge on a real UAV in-person at ICUAS 2022 in Dubrovnik. As the competition was student focused and organized by a research conference, our competitors primarily consisted of graduate robotics labs from other universities. We ended up placing 2nd out of over 50 registered teams. On the team my main contributions were the tag detection system, including an Kalman filter to better estimate tag position, and the path-planning node which used A* to compute a safe path to the objective on-line.",
-		skills: ["A* path-planning", "robotics", "estimation"],
-		technologies: ["ROS", "Gazebo", "Python", "C++", "Docker"],
+			'The objective of the International Conference on Unmanned Aerial Systems (ICUAS) UAV competition, was to autonomously navigate through an obstacle field, search for an AR tag in an unknown location, and compute and execute a launch trajectory to land a payload on the AR tag. I participated as part of McGill Aerospace Mechatronics Lab (AML) team. The first phase of the competition was simulation based, where we worked with ROS and Gazebo to submit a solution to challenge which was tested by the organizers on a random obstacle course. Once we made it to the second phase of the competition, we (alongside the other top-5 teams) shifted our focus to performing the challenge on a real UAV in-person at ICUAS 2022 in Dubrovnik. As the competition was student focused and organized by a research conference, our competitors primarily consisted of graduate robotics labs from other universities. We ended up placing 2nd out of over 50 registered teams. On the team my main contributions were the tag detection system, including an Kalman filter to better estimate tag position, and the path-planning node which used A* to compute a safe path to the objective on-line.',
+		skills: ['A* path-planning', 'robotics', 'estimation'],
+		technologies: ['ROS', 'Gazebo', 'Python', 'C++', 'Docker'],
 		imagesData: [
 			{
 				location: icuasGif,
 				alt: 'A quadrotor UAV autonomously detecting an AR marker and launching a ball at the target',
-				caption: '100% autonomous tag detection and ball launch'
-			},
-			{
-				location: icuasTeamImg,
-				alt: 'AML ICUS UAV team in Dubrovnik (me on the right!)',
-				caption: 'AML ICUS UAV team in Dubrovnik (me on the right!)'
+				caption: '100% autonomous tag detection and ball launch',
+				fit: true,
 			}
 		]
 	};
@@ -35,9 +31,9 @@
 
 </script>
 
-<div class="font-mono p-5 transition-all">
+<div class="text-sm md:text-base font-mono p-5 transition-all">
 	<body
-		><h2 class="font-extrabold text-3xl">Projects</h2>
+		><h2 class="font-extrabold text-2xl md:text-3xl">Projects</h2>
 		<p>
 			I love to use projects to explore new topics (usually in my free time) and expand my
 			comfort-zone. I'm also a strong believer in open source, so most projects I've worked on
@@ -142,7 +138,7 @@
 						d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
 					/>
 				</svg>
-				<h3 class="font-extrabold text-2xl inline">Favourites</h3>
+				<h3 class="font-extrabold text-xl md:text-2xl inline">Favourites</h3>
 			</div>
 			<div class="justify-center flex py-3">
 				<Card data={ardutask}>
@@ -163,7 +159,15 @@
 				</Card>
 			</div>
 			<div class="py-3 flex justify-center">
-				<Card data={icuas}/>
+				<Card data={icuas}>
+					<video autoplay loop muted class="w-fit">
+						<source src={icuasSim} type="video/mp4" />
+					</video>
+					<caption class="italic"
+						>Gazebo simulation of a quad rotor autonomously navigating a maze (right). Pointcloud
+						data and green A* path (left).
+					</caption>
+				</Card>
 			</div>
 		</div></body
 	>

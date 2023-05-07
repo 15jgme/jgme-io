@@ -5,8 +5,8 @@
 <header class="text-right">
 </header>
 
-<body class="transition-all flex flex-col h-screen">
-	<div class="flex flex-col pt-20 justify-center items-center font-mono text-5xl">
+<body class="transition-all flex flex-col h-screen text-sm md:text-base font-mono">
+	<div class="flex flex-col flex-grow justify-center items-center font-mono text-4xl md:text-5xl mb-auto">
 		<h1 class="font-bold ">Hi, I'm</h1>
 
 		<h1
@@ -15,7 +15,7 @@
 			Jackson Empey
 		</h1>
 
-		<div class="text-2xl w-2/3">
+		<div class="text-xl md:text-2xl w-2/3">
 			<p class="text-center">
 				An engineering graduate with experience in
 				<span class="inline-block">
@@ -45,9 +45,9 @@
 			</p>
 		</div>
 	</div>
-	<footer class="footer items-center p-4 bg-neutral text-neutral-content inline-flex mt-auto">
+	<footer class="footer items-center p-4 bg-neutral text-neutral-content inline-flex sticky top-[100vh]">
 		<div class="items-center grid-flow-col">
-			<a href="mailto:jackson.empey@mail.mcgill.ca" class="font-mono hover:scale-105"
+			<a href="mailto:jackson.empey@mail.mcgill.ca" class="font-mono hover:link"
 				>jackson.empey@mail.mcgill.ca</a
 			>
 		</div>
@@ -80,6 +80,10 @@
 					/></svg
 				></a
 			>
+		</div>
+		<div class="right-full">
+			<!-- <a href="https://www.github.com/15jgme/jgme-io" class="hover:link"> source @ github.com/15jgme/jgme-io</a> -->
+			<p>made with Sveltekit</p>
 		</div>
 	</footer>
 </body>

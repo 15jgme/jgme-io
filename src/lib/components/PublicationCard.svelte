@@ -1,12 +1,13 @@
 <script lang="ts">
+	import { fade } from "svelte/transition";
     import type { pubInterface } from "./cardInterface";
 
     export let data: pubInterface;
 </script>
 
-<div class="card w-11/12 md:w-3/4 bg-base-100 shadow-xl">
+<div class="card md:w-3/4 bg-base-200 shadow-xl" transition:fade>
 	<div class="card-body">
-		<h3 class="font-extrabold text-2xl inline card-title">{data.title}</h3>
+		<h3 class="font-extrabold text-xl md:text-2xl inline card-title">{data.title}</h3>
 		<p>
 			{data.authors}
 		</p>
