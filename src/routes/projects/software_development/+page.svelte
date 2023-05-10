@@ -15,7 +15,7 @@
 	let pawprints: cardInterface = {
 		title: 'Pawprints',
 		description:
-			'A cross-platform image sharing app written in Flutter with PocketBase as a backend. Originally intended to be an image sharing app for friends and family pets, it now serves as a template and example for implementing a image sharing app with Pocket-Flutter.',
+			'A cross-platform image sharing app written in Flutter with PocketBase as a backend. Originally intended to be an image sharing app for friends and family pets, it now serves as a template and example for implementing an image sharing app with Pocket-Flutter.',
 		skills: ['App development', 'Dart'],
 		technologies: ['Flutter', 'Pocketbase'],
 		url: 'https://github.com/15jgme/Pawprints'
@@ -95,7 +95,7 @@
 			<Card data={ardutask}>
 				<p>
 					Ardutask allows users write many 'tasks' to run at a desired rate. Tasks are added by the
-					user of the library and can do anything! They derive from a simple base task class which
+					user of the library and can do anything. They derive from a simple base task class which
 					closely resembles the standard Arduino setup/loop structure. A backend manager uses
 					hardware timers on embedded systems and software timers on desktop, to selectively run
 					each task so that it is executed at its desired rate.
@@ -159,7 +159,7 @@
 					the ground station via XBee. The ground station deserializes the message, publishes it to
 					an MQTT server, and displays the data real-time using Grafana. The neat thing is that the
 					entire message database is generated from a very simple message file, very similar to a
-					ros message file, and a code generation script written in Python takes care of the changes
+					ROS message file, and a code generation script written in Python takes care of the changes
 					on both the ground station side and the flight computer side. With only one line of code
 					you can access and write new data anywhere in the rocket firmware and instantly see it
 					show up in Grafana.

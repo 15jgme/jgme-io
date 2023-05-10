@@ -35,8 +35,7 @@
 	<body
 		><h2 class="font-extrabold text-2xl md:text-3xl">Projects</h2>
 		<p>
-			I love to use projects to explore new topics (usually in my free time) and expand my
-			comfort-zone. I'm also a strong believer in open source, so most projects I've worked on
+			I love to use projects to explore new topics and expand my comfort-zone. I'm also a strong believer in open source, so most projects I've worked on
 			(software or hardware), can be found on my GitHub in case they are helpful to others.
 		</p>
 		<p class="py-5">
@@ -144,7 +143,7 @@
 				<Card data={ardutask}>
 					<p>
 						Ardutask allows users write many 'tasks' to run at a desired rate. Tasks are added by the
-						user of the library and can do anything! They derive from a simple base task class which
+						user of the library and can do anything They derive from a simple base task class which
 						closely resembles the standard Arduino setup/loop structure. A backend manager uses
 						hardware timers on embedded systems and software timers on desktop, to selectively run
 						each task so that it is executed at its desired rate.

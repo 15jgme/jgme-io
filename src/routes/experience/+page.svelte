@@ -6,12 +6,12 @@
 	import { redirect } from '@sveltejs/kit';
 </script>
 
-<div class="text-sm md:text-base font-mono md:p-5 transition-all px-1">
+<div class="text-sm md:text-base font-mono p-5 transition-all">
 	<title>Work experience</title>
 	<body
 		><div class="flex flex-col w-full border-opacity-50">
 			<h2 class="font-extrabold text-2xl md:text-3xl ">My experience</h2>
-			<p class="pt-5">
+			<p class="pt-0">
 				I recently finished my Master's at McGill in Mechanical Engineering in the Aerospace
 				Mechatronics Lab and am currently working as a software developer at CAE with a focus on
 				aircraft dynamic modeling for simulators.

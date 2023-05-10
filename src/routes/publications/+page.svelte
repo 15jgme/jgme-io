@@ -42,7 +42,7 @@
 		><h2 class="font-extrabold text-2xl md:text-3xl ">Publications</h2>
 		<p>
 			My research at McGill's Aerospace Mechatronics Laboratory focused on aerial robotics. In
-			particular, agile fixed wing aircraft and how to control them in windy conditions. My research
+			particular, agile fixed wing aircraft and how to control them in windy conditions. This line of research
 			led me to investigate control, estimation, and aerodynamic modeling problems for this highly
 			interesting uncrewed aerial vehicle.
 		</p>

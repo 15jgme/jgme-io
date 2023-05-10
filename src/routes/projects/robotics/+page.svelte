@@ -76,8 +76,7 @@
 						control surfaces, we also studied how we can use this measurement as part of the control
 						allocation problem. Further study is needed, but preliminary results showed much
 						improved attitude control during acrobatic maneuvers when using direct slipstream
-						measurement for control allocation. The figures below are animated datasets taken from
-						real flight tests.
+						measurement for control allocation. 
 					</p>
 				</Card>
 			</div>

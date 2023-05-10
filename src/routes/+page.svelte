@@ -2,11 +2,12 @@
 </script>
 
 <title>Jackson Empey's website</title>
-<header class="text-right">
-</header>
+<header class="text-right" />
 
 <body class="transition-all flex flex-col h-screen text-sm md:text-base font-mono">
-	<div class="flex flex-col flex-grow justify-center items-center font-mono text-4xl md:text-5xl mb-auto">
+	<div
+		class="flex flex-col flex-grow justify-center items-center font-mono text-4xl md:text-5xl mb-auto"
+	>
 		<h1 class="font-bold ">Hi, I'm</h1>
 
 		<h1
@@ -19,33 +20,23 @@
 			<p class="text-center">
 				An engineering graduate with experience in
 				<span class="inline-block">
-					<a
-						href="/projects/robotics/"
-						class="font-extrabold link link-hover"
-					>
-						robotics,
-					</a></span
+					<a href="/projects/robotics/" class="font-extrabold link link-hover"> robotics, </a></span
 				>
 				<span class="inline-block"
-					><a
-						href="/projects/software_development/"
-						class="font-extrabold link link-hover"
-					>
+					><a href="/projects/software_development/" class="font-extrabold link link-hover">
 						software development,
 					</a></span
-				> and
+				>
+				and
 				<span class="inline-block link link-hover"
-					><a
-						href="/projects/mechatronics/"
-						class="font-extrabold"
-					>
-						mechatronics
-					</a></span
+					><a href="/projects/mechatronics/" class="font-extrabold"> mechatronics </a></span
 				>
 			</p>
 		</div>
 	</div>
-	<footer class="footer items-center p-4 bg-neutral text-neutral-content inline-flex sticky top-[100vh]">
+	<footer
+		class="footer items-center p-4 bg-neutral text-neutral-content inline-flex sticky top-[100vh]"
+	>
 		<div class="items-center grid-flow-col">
 			<a href="mailto:jackson.empey@mail.mcgill.ca" class="font-mono hover:link"
 				>jackson.empey@mail.mcgill.ca</a
@@ -81,9 +72,11 @@
 				></a
 			>
 		</div>
-		<div class="right-full">
+		<div class="justify-end grow">
 			<!-- <a href="https://www.github.com/15jgme/jgme-io" class="hover:link"> source @ github.com/15jgme/jgme-io</a> -->
-			<p>made with Sveltekit</p>
+			<a class="hover:link" href="https://www.github.com/15jgme/jgme-io" target="”_blank”"
+				>View Source</a
+			>
 		</div>
 	</footer>
 </body>
