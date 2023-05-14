@@ -72,25 +72,33 @@
 	};
 </script>
 
-<div class="text-sm md:text-base font-mono transition-all flex ">
+<div class="text-sm md:text-base font-mono transition-all flex">
 	<body>
-		<div class="px-5">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="w-6 h-6"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
-				/>
-			</svg>
-			<h2 class="font-extrabold text-2xl md:text-3xl inline">Software projects</h2>
+		<div class="tabs justify-center">
+			<a class="tab md:tab-lifted  tab-active" href="/projects/software_development"><div class="flex">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
+					/>
+				</svg>
+				<h2 class="font-extrabold text-xl md:text-2xl inline">Software projects</h2>
+			</div></a>
+			<a class="tab md:tab-lifted" href="/projects/robotics">Robotics</a>
+			<a class="tab md:tab-lifted" href="/projects/mechatronics"
+				>Mechatronics
+
+			</a>
 		</div>
+		
 		<div class="justify-center flex py-3">
 			<Card data={ardutask}>
 				<p>
