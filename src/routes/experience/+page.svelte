@@ -110,7 +110,7 @@
 					}}
 				>
 					<div class="flex flex-col">
-						<video autoplay loop class="" muted>
+						<video autoplay playsinline loop class="" muted>
 							<source src={sacup_launch} type="video/mp4" />
 						</video>
 						<caption class="italic"

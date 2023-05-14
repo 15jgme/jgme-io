@@ -28,7 +28,7 @@
 					{/each}
 				</p>
 				<p class="font-bold space-x-2  py-1 space-y-1">
-					Intermediate:
+					Familiar:
 					{#each data.intermediateSkills as skill, i}
 						{#if skill.redirect}
 							<a class="italic badge hover:badge-secondary" href={skill.redirect}>

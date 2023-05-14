@@ -159,7 +159,7 @@
 			</div>
 			<div class="py-3 flex justify-center">
 				<Card data={icuas}>
-					<video autoplay loop muted class="w-fit">
+					<video autoplay playsinline loop muted class="w-fit">
 						<source src={icuasSim} type="video/mp4" />
 					</video>
 					<caption class="italic"
