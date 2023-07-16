@@ -65,7 +65,6 @@
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 					<li><a href="/experience">Experience</a></li>
 					<li><a href="/publications">Publications</a></li>
-					<li><a href="/about">About</a></li>
 				</ul>
 			</div>
 			<a
@@ -81,7 +80,6 @@
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<li><a href="/experience">Experience</a></li>
 				<li><a href="/publications">Publications</a></li>
-				<li><a href="/about">About</a></li>
 			</ul>
 		</div>
 		<div class="navbar-end">
