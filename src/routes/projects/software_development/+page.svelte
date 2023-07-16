@@ -119,6 +119,17 @@
 		</div>
 
 		<div class="justify-center flex py-3">
+			<Card data={tusk}>
+				<p>
+					I wrote tusk to help manage deployments of my moonflower project and personal website on a
+					VPS. I use github actions to build docker images for these projects and then once built,
+					tusk to deploy. This project was one of my first entries to Go and BubbleTea, and I had a
+					great experience working with both!
+				</p>
+			</Card>
+		</div>
+
+		<div class="justify-center flex py-3">
 			<Card data={moonflower}>
 				<a href="https://moonflower.jgme.io" class="btn min-w-fit">Check out moonflower</a>
 				<p>
@@ -134,18 +145,7 @@
 			</Card>
 		</div>
 
-		<div class="justify-center flex py-3">
-			<Card data={tusk}>
-				<p>
-					I wrote tusk to help manage deployments of my moonflower project and personal website on a
-					VPS. I use github actions to build docker images for these projects and then once built,
-					tusk to deploy. This project was one of my first entries to Go and BubbleTea, and I had a
-					great experience working with both!
-				</p>
-			</Card>
-		</div>
-
-		<div class="justify-center flex py-3">
+		<!-- <div class="justify-center flex py-3">
 			<Card data={pawprints}>
 				<p>
 					This app was my first big project with Flutter and mobile app development, it uses many of
@@ -156,7 +156,7 @@
 					pattern to learn more about it.
 				</p>
 			</Card>
-		</div>
+		</div> -->
 
 		<div class="justify-center flex py-3">
 			<Card data={rx1}>

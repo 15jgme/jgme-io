@@ -12,9 +12,8 @@
 		><div class="flex flex-col w-full border-opacity-50">
 			<h2 class="font-extrabold text-2xl md:text-3xl ">My experience</h2>
 			<p class="pt-0">
-				I recently finished my Master's at McGill in Mechanical Engineering in the Aerospace
-				Mechatronics Lab and am currently working as a software developer at CAE with a focus on
-				aircraft dynamic modeling for simulators.
+				I'm a mechanical engineering graduate with a focus on robotics, autonomous systems, and aerospace.
+				My masters research focused on UAVs where I studied wind disturbance rejection and sensing for agile autonomous fixed-wing aircraft. Afterwards, I moved into flight dynamics software development for aircraft simulation.
 			</p>
 
 			<div class="divider">Skills</div>
@@ -30,7 +29,7 @@
 						intermediateSkills: [
 							{ name: 'Go', redirect: '/projects/software_development' },
 							{ name: 'Javascript', redirect: '/projects/software_development' },
-							{ name: 'Dart', redirect: '/projects/software_development' },
+							{ name: 'Dart'},
 							{ name: 'Java' },
 							{ name: 'ANSYS APDL' }
 						]
@@ -45,7 +44,7 @@
 							{ name: 'Simulink', redirect: '/projects/robotics' },
 							{ name: 'Linux', redirect: '/projects/robotics' },
 							{ name: 'PlatformIO', redirect: '/projects/software_development' },
-							{ name: 'Flutter', redirect: '/projects/software_development' },
+							{ name: 'Flutter' },
 							{ name: 'Svelte', redirect: '/projects/software_development' },
 							{ name: 'OpenFOAM' },
 							{ name: 'Git' }
