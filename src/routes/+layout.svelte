@@ -88,7 +88,7 @@
 					<!-- this hidden checkbox controls the state -->
 					<input
 						type="checkbox"
-						data-toggle-theme="light,dark"
+						data-toggle-theme="cupcake,dark"
 						data-act-class="ACTIVECLASS"
 						class="opacity-0"
 					/>
