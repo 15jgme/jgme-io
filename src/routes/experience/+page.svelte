@@ -12,10 +12,14 @@
 		><div class="flex flex-col w-full border-opacity-50">
 			<h2 class="font-extrabold text-2xl md:text-3xl ">My experience</h2>
 			<p class="pt-0">
-				I'm a mechanical engineering graduate with a focus on robotics, autonomous systems, and aerospace.
-				My masters research focused on UAVs where I studied wind disturbance rejection and sensing for agile autonomous fixed-wing aircraft. Afterwards, I moved into flight dynamics software development for aircraft simulation.
+				I'm a mechanical engineering graduate with a focus on robotics, autonomous systems, and
+				aerospace. My masters research focused on UAVs where I studied wind disturbance rejection
+				and sensing for agile autonomous fixed-wing aircraft. Afterwards, I moved into flight
+				dynamics software development for aircraft simulation.
 			</p>
-
+			<div class="text-center">
+				<a class="btn btn-primary btn-md" href="pdf/JacksonEmpeyResume.pdf">My resume</a>
+			</div>
 			<div class="divider">Skills</div>
 			<div class="grid card bg-base-100 rounded-box place-items-center space-y-2">
 				<SkillCard
@@ -29,7 +33,7 @@
 						intermediateSkills: [
 							{ name: 'Go', redirect: '/projects/software_development' },
 							{ name: 'Javascript', redirect: '/projects/software_development' },
-							{ name: 'Dart'},
+							{ name: 'Dart' },
 							{ name: 'Java' },
 							{ name: 'ANSYS APDL' }
 						]
@@ -68,8 +72,12 @@
 					data={{
 						company: 'CAE',
 						role: 'Software Developer',
-						dates: 'July 2022 - Present',
-						description: 'Specialization in flight dynamics modeling for flight simulators.',
+						dates: 'July 2022 - July 2023',
+						description: [
+							'Contributed to the development of new flight dynamics assets for a prototype full-flight simulator. Key contributions include: refining data-processing logic to extract valuable state from flight test data, coordination with other subsystems to ensure all performance systems worked together to accurately match flight test data, and, development on a Qualification Test Guide package for FAA certification',
+							'Maintained aerodynamics simulation assets for legacy level-D full-flight simulator and supported FAA qualification for five simulators',
+							'Maintained the aerodynamics codebase of a high-volume aircraft simulation product'
+						],
 						skills: ['C/C++', 'Python', 'Flight dynamics']
 					}}
 				/>
@@ -77,9 +85,15 @@
 					data={{
 						company: 'McGill',
 						role: 'Graduate researcher',
-						dates: 'September 2020 - July 2022',
-						description:
-							'Investigating wind rejection methods to improve the performance of lightweight autonomous fixed-wing UAVs. Developed a model-based approach to estimate wind from a sensor placed in the wake of a propeller, and a feedforward control method to improve the performance of a UAV in windy conditions using this estimate.',
+						dates: 'September 2020 - November 2022',
+						description: [
+							'Researched and developed wind rejection strategies for agile fixed-wing UAVs',
+							'Developed an online estimator to address challenges related to propeller flow interference in airspeed measurements, enabling wind estimation on UAV platforms with sensor placement restrictions',
+							'Designed a feedforward controller to substantially improve position-tracking performance of agile fixed-wing UAVs in windy conditions',
+							'Implemented controller and estimator on flight hardware in C++ using the PX4 flight-stack',
+							'Demonstrated controller and estimator performance through flight tests and simulation',
+							'Published and presented two papers at the International Conference on Unmanned Aerial Systems (ICUAS) 2022 held in Dubrovnik'
+						],
 						skills: ['PX4', 'ROS', 'C/C++', 'Control systems', 'MATLAB/Simulink']
 					}}
 				/>
@@ -96,8 +110,9 @@
 						company: 'M.Sc. Mechanical Engineering',
 						role: 'McGill University',
 						dates: 'September 2020 - July 2022, GPA: 3.94',
-						description:
+						description: [
 							'Thesis: Wind Sensing and Rejection for Agile Fixed-Wing Unmanned Aerial Vehicles'
+						]
 					}}
 				/>
 				<ExperienceCard
@@ -105,7 +120,7 @@
 						company: 'B.ASc. Mechanical Engineering',
 						role: "Queen's University",
 						dates: 'September 2016 - May 2020, GPA: 3.7',
-						description: "President of the Queen's Rocket Engineering Team (QRET)."
+						description: ["President of the Queen's Rocket Engineering Team (QRET)."]
 					}}
 				>
 					<div class="flex flex-col">
