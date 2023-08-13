@@ -7,13 +7,26 @@
 
 <div class="card md:w-3/4 bg-base-200 shadow-xl" transition:fade>
 	<div class="card-body">
-		<h3 class="font-extrabold text-xl md:text-2xl inline card-title">{data.company} <span class="font-normal text-lg">{data.role}</span></h3>
+		<h3 class="font-extrabold text-xl md:text-2xl inline card-title">
+			{data.company} <span class="font-normal text-lg">{data.role}</span>
+		</h3>
 		<p class="text-sm">
 			{data.dates}
 		</p>
-		<p>
-			{data.description}
-		</p>
+		{#if data.description.length > 1}
+			<ul class="">
+				{#each data.description as bullet_point}
+					<li class="list-disc py-1">
+						{bullet_point}
+					</li>
+				{/each}
+			</ul>
+		{:else}
+			<p>
+				{data.description}
+			</p>
+		{/if}
+
 		<div class="flex space-x-2">
 			{#if data.skills}
 				<p class="font-bold ">

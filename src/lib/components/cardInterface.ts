@@ -34,7 +34,7 @@ export interface experienceInterface {
     company: string,
     role: string,
     dates: string,
-    description: string,
+    description: string[],
     skills?: string[],
 }
 
