@@ -85,7 +85,7 @@
 					data={{
 						company: 'McGill',
 						role: 'Graduate researcher',
-						dates: 'September 2020 - November 2022',
+						dates: 'September 2020 - July 2022',
 						description: [
 							'Researched and developed wind rejection strategies for agile fixed-wing UAVs',
 							'Developed an online estimator to address challenges related to propeller flow interference in airspeed measurements, enabling wind estimation on UAV platforms with sensor placement restrictions',
@@ -109,7 +109,7 @@
 					data={{
 						company: 'M.Sc. Mechanical Engineering',
 						role: 'McGill University',
-						dates: 'September 2020 - July 2022, GPA: 3.94',
+						dates: 'September 2020 - October 2022, GPA: 3.94',
 						description: [
 							'Thesis: Wind Sensing and Rejection for Agile Fixed-Wing Unmanned Aerial Vehicles'
 						]
